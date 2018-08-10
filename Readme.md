@@ -1,8 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Юлия Забелина](https://up.htmlacademy.ru/htmlcss/22/user/811937).
-* Наставник: [Дмитрий Мальнев](https://htmlacademy.ru/profile/fuckomako).
-
+* Наставник! [Дмитрий Мальнев](https://htmlacademy.ru/profile/fuckomako).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

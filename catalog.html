@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/index-logo.svg" alt="Логотип студии nerds">
         </a>
         <ul class="site-navigation">
@@ -28,7 +28,7 @@
           <p>СТОИМОСТЬ:</p>
           <!-- Здесь будет форма-->
         </div>
-        <div class="grid">
+        <div class="grid-list">
           <p>СЕТКА:</p>
           <ul class="grid-item">
             <li>Адаптивная</li>
@@ -36,7 +36,7 @@
             <li>Резиновая</li>
           </ul>
         </div>
-        <div class="features">
+        <div class="features-list">
           <p>ОСОБЕННОСТИ:</p>
           <ul class="features-item">
             <li>Слайдер</li>
@@ -57,42 +57,123 @@
         </ul>
       </section>
       <section class="catalog">
-        <!-- Карточки товаров -->
-      </section>
-      <section class="nav-catalog">
-        <ul class="buton-nav-catalog">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>следующая</li>
+        <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">Sedona</span>
+                <p>Информационный сайт для туристов</p>
+              </a>
+              <a class="button" href="#">
+                990 РУБ
+              </a>
+            </h3>
+            <img src="img-sedona.jpg" alt="Информационный сайт для туристов">
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">PINK APP</span>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+              </a>
+              <a class="button" href="#">
+                990 РУБ
+              </a>
+            </h3>
+            <img src="img-pink.jpg" alt="Продуктовый лендинг приложения для iOS и Android">
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">Barbershop</span>
+                <p>Сайт салона красоты.<br>
+                  Для мужчин, да.</p>
+              </a>
+              <a class="button" href="#">
+                990 РУБ
+              </a>
+            </h3>
+            <img src="img-barbershop.jpg" alt="Сайт Barbershop">
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">MISHKA</span>
+                <p>Интернет-магазин вязанных игуршек</p>
+              </a>
+              <a class="button" href="#">
+                990 РУБ
+              </a>
+            </h3>
+            <img src="img-mishka.jpg" alt="Интернет-магазин вязанных игуршек">
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">A PLUS</span>
+                <p>Лендинг курсов повышения квалификации</p>
+              </a>
+              <a class="button" href="#">
+                990 РУБ
+              </a>
+            </h3>
+            <img src="img-plus.jpg" alt="Лендинг курсов повышения квалификации">
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-item-title">КВАСТ</span>
+                <p>Промо-сайт производителя крафтового кваса</p>
+              </a>
+              <a class="button" href="#">
+                990 РУБ
+              </a>
+            </h3>
+            <img src="img-kvast.jpg" alt="Промо-сайт производителя крафтового кваса">
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item">1</li>
+          <li class="pagination-item">2</li>
+          <li class="pagination-item">3</li>
+          <li class="pagination-item">следующая</li>
         </ul>
       </section>
     </main>
-    <footer>
-      <div class="contacts">
-        <p class="name">NЁRDS DESIGN STUDIO</p>
-	    	<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-		    <p>тел. +7 (812) 275-75-75</p>
-		    <a class="write-us" href="mail.nerds">НАПИШИТЕ НАМ</a>
-	    </div>
-	    <div>
-	    <!-- Здесь будет карта -->
-	    </div>
-	    <div class="social-networks">
-	       <a href="vk.group">
-           <img src="img/index-vk-logo.svg" alt="Логотип html-academy">
-	       </a>
-	       <a href="facebook.group">
-		       <img src="img/index-fb-logo.svg" alt="Логотип html-academy">
-	       </a>
-	       <a href="instagram.gtoup">
-		       <img src="img/index-instagram-logo.svg" alt="Логотип html-academy">
-	       </a>
-       </div>
-	     <div>
-	         <p><b>Давайте дружить, это выгодно!</b></p>
-	         <p>Скидка 10% для друзей из социальный сетей.</p>
-	     </div>
+    <footer class="page-footer">
+        <section class="footer-contacts">
+            <p class="name">NЁRDS DESIGN STUDIO</p>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a class="write-us" href="mail.nerds">НАПИШИТЕ НАМ</a>
+        </section>>
+        <section class="map">
+            <!-- Здесь будет карта -->
+        </section>
+        <section class="footer-social">
+          <ul>
+            <li>
+              <a href="vk.group.com">
+                <img src="img/index-vk-logo.svg" alt="Логотип html-academy">
+              </a>
+            </li>
+            <li>
+              <a href="facebook.group">
+                <img src="img/index-fb-logo.svg" alt="Логотип html-academy">
+              </a>
+            </li>
+            <li>
+              <a href="instagram.gtoup">
+                <img src="img/index-instagram-logo.svg" alt="Логотип html-academy">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-friendship">
+            <p><b>Давайте дружить, это выгодно!</b></p>
+            <p>Скидка 10% для друзей из социальный сетей.</p>
+        </section>
     </footer>
   </body>
 </html>

@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-navigation">
       <a class="main-header-logo">
-      <img src="img/nerds-logo.svg" alt="Логотип студии nerds">
+      <img src="img/nerds-logo.svg" alt="Логотип студии nerds">s
       </a>
       <ul class="site-navigation">
         <li><a href="studio.html">студия</a></li>
@@ -19,7 +22,7 @@
       <ul class="user-navigation">
         <li>
           <a href="basket.html">
-            <img src="cart-icon.svg">
+            <img src="img/cart-icon.svg" alt="иконка корзины">
             Корзина
           </a>
         </li>
@@ -28,49 +31,49 @@
        <h1>Магазин готовых шаблонов</h1>
     </header>
     <main>
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=priceoutput.value">
 
-        <fieldset>
-          <legend>СТОИМОСТЬ:</legend>
-          <!-- Здесь будет форма-->
+        <fieldset class="price">
+          <legend>Стоимость:</legend>
+          <input type="range" min="0" max="15000" step="1">
+          <output name="priceoutput" ></output>
+        </fieldset>
 
-      </fieldset>
-
-      <fieldset>
-          <legend>СЕТКА:</legend>
+        <fieldset class="grid">
+          <legend>Сетка:</legend>
           <ul>
             <li>
-              <input type="radio" name="grid" value="adaptive" id="adaptive-filter" checked>
+              <input class="filter-input" type="radio" name="grid" value="adaptive" id="adaptive-filter" checked>
               <label for="adaptive-filter">Адаптивная</label>
             </li>
             <li>
-              <input type="radio" name="grid" value="fixed" id="fixed-filter">
+              <input class="filter-input" type="radio" name="grid" value="fixed" id="fixed-filter">
               <label for="fixed-filter">Фиксированая</label>
             </li>
             <li>
-              <input type="radio" name="grid" value="rubber" id="rubber-filter">
+              <input class="filter-input" type="radio" name="grid" value="rubber" id="rubber-filter">
               <label for="rubber-filter">Резиновая</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="features">
           <legend>ОСОБЕННОСТИ:</legend>
           <ul class="features-item">
             <li>
-              <input type="checkbox" name="slider" id="slider-filter" checked>
+              <input class="filter-input" type="checkbox" name="slider" id="slider-filter" checked>
               <label for="slider-filter">Слайдер</label>
             </li>
             <li>
-              <input type="checkbox" name="advantage_block" id="advantsge-filter">
+              <input class="filter-input" type="checkbox" name="advantage_block" id="advantsge-filter">
               <label for="advantsge-filter">Блок преимуществ</label>
             </li>
             <li>
-              <input type="checkbox" name="news" id="news-filter" checked>
+              <input class="filter-input" type="checkbox" name="news" id="news-filter" checked>
               <label for="news-filter">Новости</label>
             </li>
             <li>
-              <input type="checkbox" name="gallery" id="gallery-filter">
+              <input class="filter-input" type="checkbox" name="gallery" id="gallery-filter">
               <label for="gallery-filter">Галерея</label>
             </li>
             <li>
@@ -78,103 +81,113 @@
               <label for="basket-filter">Корзина</label>
             </li>
           </ul>
-        </div>
+
         </fieldset>
 
-        <button type="submit">ПОКАЗАТЬ</button>
-      </section>
+        <button class="submit"  type="submit">Показать</button>
+
     </form>
 
       <section class="sorting">
         <p>Сортировать:</p>
-        <ul class="sorting-item">
-          <li>по цене</li>
-          <li>по типу</li>
-          <li>по названию</li>
+        <ul>
+          <li><a class="sorting-item" href="#">по цене</a></li>
+          <li><a class="sorting-item" href="#">по типу</a></li>
+          <li><a class="sorting-item" href="#">по названию</a></li>
         </ul>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3>
+            <img src="img/img-sedona.png" alt="Информационный сайт для туристов">
+            <div class="Sedona">
               <a href="catalog-item.html">
                 <span class="catalog-item-title">Sedona</span>
-                <p>Информационный сайт для туристов</p>
               </a>
+                <p>Информационный сайт для туристов</p>
               <a class="button" href="#">
                 990 РУБ
               </a>
-            </h3>
-            <img src="img-sedona.png" alt="Информационный сайт для туристов">
+            </div>
           </li>
           <li class="catalog-item">
-            <h3>
+            <img src="img/img-pink.png" alt="Продуктовый лендинг приложения для iOS и Android">
+            <div class="pink">
               <a href="catalog-item.html">
                 <span class="catalog-item-title">PINK APP</span>
+              </a>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-              </a>
+
               <a class="button" href="#">
                 990 РУБ
               </a>
-            </h3>
-            <img src="img-pink.png" alt="Продуктовый лендинг приложения для iOS и Android">
+            </div>
           </li>
           <li class="catalog-item">
-            <h3>
+            <img src="img/img-barbershop.png" alt="Сайт Barbershop">
+            <div class="barbershop">
               <a href="catalog-item.html">
-                <span class="catalog-item-title">Barbershop</span>
-                <p>Сайт салона красоты.<br>
-                  Для мужчин, да.</p>
-              </a>
+                <span class="catalog-item-title">BARBERSHOP</span>
+                </a>
+                <p>Сайт салона красоты.
+                Для мужчин, да.</p>
+
               <a class="button" href="#">
                 990 РУБ
               </a>
-            </h3>
-            <img src="img-barbershop.png" alt="Сайт Barbershop">
+            </div>
           </li>
           <li class="catalog-item">
-            <h3>
+            <img src="img/img-mishka.png" alt="Интернет-магазин вязанных игуршек">
+            <div class="mishka">
               <a href="catalog-item.html">
                 <span class="catalog-item-title">MISHKA</span>
-                <p>Интернет-магазин вязанных игуршек</p>
               </a>
+                <p>Интернет-магазин вязанных игуршек</p>
               <a class="button" href="#">
                 990 РУБ
               </a>
-            </h3>
-            <img src="img-mishka.png" alt="Интернет-магазин вязанных игуршек">
+            </div>
           </li>
           <li class="catalog-item">
-            <h3>
+            <img src="img/img-aplus.png" alt="Лендинг курсов повышения квалификации">
+            <div class="a-plus">
               <a href="catalog-item.html">
                 <span class="catalog-item-title">A PLUS</span>
-                <p>Лендинг курсов повышения квалификации</p>
               </a>
+                <p>Лендинг курсов повышения квалификации</p>
               <a class="button" href="#">
                 990 РУБ
               </a>
-            </h3>
-            <img src="img-plus.png" alt="Лендинг курсов повышения квалификации">
+            </div>
           </li>
           <li class="catalog-item">
-            <h3>
+            <img src="img/img-kvast.png" alt="Промо-сайт производителя крафтового кваса">
+            <div class="kvast">
               <a href="catalog-item.html">
                 <span class="catalog-item-title">КВАСТ</span>
-                <p>Промо-сайт производителя крафтового кваса</p>
               </a>
+                <p>Промо-сайт производителя крафтового кваса</p>
               <a class="button" href="#">
                 990 РУБ
               </a>
-            </h3>
-            <img src="img-kvast.png" alt="Промо-сайт производителя крафтового кваса">
+            </div>
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item">1</li>
-          <li class="pagination-item">2</li>
-          <li class="pagination-item">3</li>
-          <li class="pagination-item">следующая</li>
+          <li class="pagination-item">
+            <a href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="next" href="#">следующая</a>
+          </li>
         </ul>
       </section>
     </main>
@@ -191,17 +204,17 @@
       	<section class="footer-social">
           <ul>
             <li>
-              <a href="vk.group.com" aria-label="Мы в Вконтакте">
+              <a class="social-button" href="vk.group.com" aria-label="Мы в Вконтакте">
                 <img src="img/vk-icon.svg" alt="ВКонтакте">
               </a>
             </li>
             <li>
-              <a href="facebook.group" aria-label="Мы в Фейсбук">
-                <img src="<img/fb-icon.svg" alt="Фейсбук">
+              <a class="social-button" href="facebook.group" aria-label="Мы в Фейсбук">
+                <img src="img/fb-icon.svg" alt="Фейсбук">
               </a>
             </li>
             <li>
-              <a href="instagram.gtoup" aria-label="Мы в Инстаграмм">
+              <a class="social-button" href="instagram.gtoup" aria-label="Мы в Инстаграмм">
   		          <img src="img/insta-icon.svg" alt="Инстаграмм">
   	          </a>
             </li>
@@ -226,7 +239,7 @@
         </textarea>
 
 
-        <input type="submit" value="Отправить">
+        <button class="button" type="submit">Отправить</button>
       </form>
     </div>
   </body>

@@ -10,14 +10,14 @@
   <body>
     <header class="page-header">
       <nav class="main-navigation">
-      <a class="main-header-logo">
-      <img src="img/nerds-logo.svg" alt="Логотип студии nerds">s
+      <a class="main-header-logo" href="index.html">
+      <img src="img/nerds-logo.svg" alt="Логотип студии nerds">
       </a>
       <ul class="site-navigation">
-        <li><a href="studio.html">студия</a></li>
-        <li><a href="customers.html">клиенты</a></li>
+        <li><a href="index.html">студия</a></li>
+        <li><a href="#">клиенты</a></li>
         <li><a href="catalog.html">магазин</a></li>
-        <li><a href="contacts.html">контакты</a></li>
+        <li><a href="#">контакты</a></li>
       </ul>
       <ul class="user-navigation">
         <li>
@@ -44,15 +44,15 @@
           <ul>
             <li>
               <input class="filter-input" type="radio" name="grid" value="adaptive" id="adaptive-filter" checked>
-              <label for="adaptive-filter">Адаптивная</label>
+              <label class="filter-label" for="adaptive-filter">Адаптивная</label>
             </li>
             <li>
               <input class="filter-input" type="radio" name="grid" value="fixed" id="fixed-filter">
-              <label for="fixed-filter">Фиксированая</label>
+              <label class="filter-label" for="fixed-filter">Фиксированая</label>
             </li>
             <li>
               <input class="filter-input" type="radio" name="grid" value="rubber" id="rubber-filter">
-              <label for="rubber-filter">Резиновая</label>
+              <label class="filter-label" for="rubber-filter">Резиновая</label>
             </li>
           </ul>
         </fieldset>
@@ -62,23 +62,23 @@
           <ul class="features-item">
             <li>
               <input class="filter-input" type="checkbox" name="slider" id="slider-filter" checked>
-              <label for="slider-filter">Слайдер</label>
+              <label class="filter-label" for="slider-filter">Слайдер</label>
             </li>
             <li>
               <input class="filter-input" type="checkbox" name="advantage_block" id="advantsge-filter">
-              <label for="advantsge-filter">Блок преимуществ</label>
+              <label class="filter-label" for="advantsge-filter">Блок преимуществ</label>
             </li>
             <li>
               <input class="filter-input" type="checkbox" name="news" id="news-filter" checked>
-              <label for="news-filter">Новости</label>
+              <label class="filter-label" for="news-filter">Новости</label>
             </li>
             <li>
               <input class="filter-input" type="checkbox" name="gallery" id="gallery-filter">
-              <label for="gallery-filter">Галерея</label>
+              <label class="filter-label" for="gallery-filter">Галерея</label>
             </li>
             <li>
-              <input type="checkbox" name="basket" id="basket-filter">
-              <label for="basket-filter">Корзина</label>
+              <input class="filter-input" type="checkbox" name="basket" id="basket-filter">
+              <label class="filter-label" for="basket-filter">Корзина</label>
             </li>
           </ul>
 
@@ -89,7 +89,7 @@
     </form>
 
       <section class="sorting">
-        <p>Сортировать:</p>
+        <h3>Сортировать:</h3>
         <ul>
           <li><a class="sorting-item" href="#">по цене</a></li>
           <li><a class="sorting-item" href="#">по типу</a></li>
@@ -99,9 +99,9 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
         <ul class="catalog-list">
-          <li class="catalog-item">
+          <li >
             <img src="img/img-sedona.png" alt="Информационный сайт для туристов">
-            <div class="Sedona">
+            <div class="catalog-item catalog-item-sedona">
               <a href="catalog-item.html">
                 <span class="catalog-item-title">Sedona</span>
               </a>
@@ -111,10 +111,10 @@
               </a>
             </div>
           </li>
-          <li class="catalog-item">
+          <li>
             <img src="img/img-pink.png" alt="Продуктовый лендинг приложения для iOS и Android">
-            <div class="pink">
-              <a href="catalog-item.html">
+            <div class="catalog-item .catalog-item-pink">
+              <a href="#">
                 <span class="catalog-item-title">PINK APP</span>
               </a>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -124,10 +124,10 @@
               </a>
             </div>
           </li>
-          <li class="catalog-item">
+          <li>
             <img src="img/img-barbershop.png" alt="Сайт Barbershop">
-            <div class="barbershop">
-              <a href="catalog-item.html">
+            <div class="catalog-item catalog-item-barbershop">
+              <a href="#">
                 <span class="catalog-item-title">BARBERSHOP</span>
                 </a>
                 <p>Сайт салона красоты.
@@ -138,10 +138,10 @@
               </a>
             </div>
           </li>
-          <li class="catalog-item">
+          <li >
             <img src="img/img-mishka.png" alt="Интернет-магазин вязанных игуршек">
-            <div class="mishka">
-              <a href="catalog-item.html">
+            <div class="catalog-item catalog-item-mishka">
+              <a href="#">
                 <span class="catalog-item-title">MISHKA</span>
               </a>
                 <p>Интернет-магазин вязанных игуршек</p>
@@ -150,10 +150,10 @@
               </a>
             </div>
           </li>
-          <li class="catalog-item">
+          <li>
             <img src="img/img-aplus.png" alt="Лендинг курсов повышения квалификации">
-            <div class="a-plus">
-              <a href="catalog-item.html">
+            <div class="catalog-item catalog-item-a-plus">
+              <a href="#">
                 <span class="catalog-item-title">A PLUS</span>
               </a>
                 <p>Лендинг курсов повышения квалификации</p>
@@ -162,10 +162,10 @@
               </a>
             </div>
           </li>
-          <li class="catalog-item">
+          <li>
             <img src="img/img-kvast.png" alt="Промо-сайт производителя крафтового кваса">
-            <div class="kvast">
-              <a href="catalog-item.html">
+            <div class="catalog-item catalog-item-kvast">
+              <a href="#">
                 <span class="catalog-item-title">КВАСТ</span>
               </a>
                 <p>Промо-сайт производителя крафтового кваса</p>
@@ -177,51 +177,53 @@
         </ul>
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a href="#">1</a>
+            <a class="pagination-button" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a href="#">2</a>
+            <a class="pagination-button" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a href="#">3</a>
+            <a class="pagination-button" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="next" href="#">следующая</a>
+            <a class="pagination-button" href="#">следующая</a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="page-footer">
 	      <section class="footer-contacts">
-		        <p class="name">NЁRDS DESIGN STUDIO</p>
+		        <h3 class="name">NЁRDS DESIGN STUDIO</h3>
 		        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 	        	<p>тел. +7 (812) 275-75-75</p>
 	        	<a class="write-us" href="mail.nerds">НАПИШИТЕ НАМ</a>
       	</section>
       	<section class="map">
+          <h3 class="visually-hidden">Мы находимся здесь</h3>
           	<!-- Здесь будет карта -->
         </section>
       	<section class="footer-social">
+          <h3 class="visually-hidden">Мы в соцсетях</h3>
           <ul>
             <li>
-              <a class="social-button" href="vk.group.com" aria-label="Мы в Вконтакте">
+              <a class="social-button" href="vk.group">
                 <img src="img/vk-icon.svg" alt="ВКонтакте">
               </a>
             </li>
             <li>
-              <a class="social-button" href="facebook.group" aria-label="Мы в Фейсбук">
+              <a class="social-button" href="facebook.group">
                 <img src="img/fb-icon.svg" alt="Фейсбук">
               </a>
             </li>
             <li>
-              <a class="social-button" href="instagram.gtoup" aria-label="Мы в Инстаграмм">
+              <a class="social-button" href="instagram.gtoup">
   		          <img src="img/insta-icon.svg" alt="Инстаграмм">
   	          </a>
             </li>
           </ul>
 	      </section>
       	<section class="footer-friendship">
-	          <p><b>Давайте дружить, это выгодно!</b></p>
+	          <h3><b>Давайте дружить, это выгодно!</b></h3>
 	          <p>Скидка 10% для друзей из социальный сетей.</p>
 	      </section>
     </footer>

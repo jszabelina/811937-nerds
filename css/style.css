@@ -9,7 +9,7 @@ body {
   color: #000000;
 
 }
-
+/*Убираем подчеркивание всех ссылок*/
 a {
   text-decoration: none;
 }
@@ -89,7 +89,7 @@ header, .sliders {
 .about-us table {
   text-align: center;
 }
-.indicators p {
+.indicators h3 {
   font-weight: bold;
 }
 
@@ -116,7 +116,7 @@ header, .sliders {
   font-size: 18px;
   line-height: 30px;
 }
-.footer-contacts a {
+.write-us {
   color: #ffffff;
   background-color: #fb565a;
   line-height: 18px;
@@ -160,11 +160,12 @@ legend {
   text-transform: uppercase;
   line-height: 30px;
 }
-.filter-input label {
+.filter-input,
+.filter-label{
   color: #283136;
 }
-.filter-input:hover + label,
-.filter-input:focus + filter label{
+.filter-input:hover + .filter-label,
+.filter-input:focus + .filter-label{
   color: #000000;
 }
 .submit {
@@ -206,7 +207,7 @@ legend {
 .catalog .button {
   color: #ffffff;
 }
-.catalog-list div {
+.catalog-item {
   background-color: #eeeeee;
   color: #666666;
 }
@@ -218,4 +219,8 @@ legend {
   background-color: #eeeeee;
   line-height: 18px;
   text-align: center;
+}
+.pagination-button:hover,
+.pagination-button:focus {
+  background-color: #dfdfdf;
 }

@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-      <img src="img/nerds-logo.svg" alt="Логотип студии nerds">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="index.html">студия</a></li>
-        <li><a href="#">клиенты</a></li>
-        <li><a href="catalog.html">магазин</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li>
-          <a href="basket.html">
-            <img src="img/cart-icon.svg" alt="иконка корзины">
-            Корзина
-          </a>
-        </li>
-      </ul>
-       </nav>
-       <h1>Магазин готовых шаблонов</h1>
-    </header>
+	  <header class="page-header-catalog">
+	    <nav class="main-navigation">
+        <div class="logo-navigation">
+            <a class="main-header-logo">
+		        <img src="img/nerds-logo.svg" alt="Логотип студии nerds">
+		        </a>
+        </div>
+        <div class=site-navigation-wrapper>
+          <ul class="site-navigation">
+		        <li><a href="#">Студия</a></li>
+		        <li><a href="#">Клиенты</a></li>
+		        <li><a href="catalog.html">Магазин</a></li>
+		        <li><a href="#">Контакты</a></li>
+		      </ul>
+        </div>
+        <div class="user-navigation">
+              <a href="basket.html">
+                <img src="cart-icon.svg" alt="">
+                Корзина
+              </a>
+        </div>
+	     </nav>
+      <h1>Магазин готовых шаблонов</h1>
+  	</header>
     <main>
+      <div class="catalog-column">
       <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=priceoutput.value">
-
         <fieldset class="price">
           <legend>Стоимость:</legend>
           <input type="range" min="0" max="15000" step="1">
@@ -87,7 +89,7 @@
         <button class="submit"  type="submit">Показать</button>
 
     </form>
-
+      <div class="sorting-catalog-column">
       <section class="sorting">
         <h3>Сортировать:</h3>
         <ul>
@@ -99,7 +101,7 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
         <ul class="catalog-list">
-          <li >
+          <li class="catalog-containers">
             <img src="img/img-sedona.png" alt="Информационный сайт для туристов">
             <div class="catalog-item catalog-item-sedona">
               <a href="catalog-item.html">
@@ -111,7 +113,7 @@
               </a>
             </div>
           </li>
-          <li>
+          <li class="catalog-containers">
             <img src="img/img-pink.png" alt="Продуктовый лендинг приложения для iOS и Android">
             <div class="catalog-item .catalog-item-pink">
               <a href="#">
@@ -124,7 +126,7 @@
               </a>
             </div>
           </li>
-          <li>
+          <li class="catalog-containers">
             <img src="img/img-barbershop.png" alt="Сайт Barbershop">
             <div class="catalog-item catalog-item-barbershop">
               <a href="#">
@@ -138,7 +140,7 @@
               </a>
             </div>
           </li>
-          <li >
+          <li class="catalog-containers">
             <img src="img/img-mishka.png" alt="Интернет-магазин вязанных игуршек">
             <div class="catalog-item catalog-item-mishka">
               <a href="#">
@@ -150,7 +152,7 @@
               </a>
             </div>
           </li>
-          <li>
+          <li class="catalog-containers">
             <img src="img/img-aplus.png" alt="Лендинг курсов повышения квалификации">
             <div class="catalog-item catalog-item-a-plus">
               <a href="#">
@@ -162,7 +164,7 @@
               </a>
             </div>
           </li>
-          <li>
+          <li class="catalog-containers">
             <img src="img/img-kvast.png" alt="Промо-сайт производителя крафтового кваса">
             <div class="catalog-item catalog-item-kvast">
               <a href="#">
@@ -190,6 +192,8 @@
           </li>
         </ul>
       </section>
+    </div>
+    </div>
     </main>
     <footer class="page-footer">
 	      <section class="footer-contacts">
@@ -202,30 +206,32 @@
           <h3 class="visually-hidden">Мы находимся здесь</h3>
           	<!-- Здесь будет карта -->
         </section>
-      	<section class="footer-social">
-          <h3 class="visually-hidden">Мы в соцсетях</h3>
-          <ul>
-            <li>
-              <a class="social-button" href="vk.group">
-                <img src="img/vk-icon.svg" alt="ВКонтакте">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="facebook.group">
-                <img src="img/fb-icon.svg" alt="Фейсбук">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="instagram.gtoup">
-  		          <img src="img/insta-icon.svg" alt="Инстаграмм">
-  	          </a>
-            </li>
-          </ul>
-	      </section>
-      	<section class="footer-friendship">
-	          <h3><b>Давайте дружить, это выгодно!</b></h3>
-	          <p>Скидка 10% для друзей из социальный сетей.</p>
-	      </section>
+
+          <div class="social-wrapper">
+          	<section class="footer-social">
+              <ul>
+                <li>
+                  <a class="social-button" href="vk.group">
+                    <img src="img/vk-icon.svg" alt="ВКонтакте">
+                  </a>
+                </li>
+                <li>
+                  <a class="social-button" href="facebook.group">
+                    <img src="img/fb-icon.svg" alt="Фейсбук">
+                  </a>
+                </li>
+                <li>
+                  <a class="social-button" href="instagram.gtoup">
+  		              <img src="img/insta-icon.svg" alt="Инстаграмм">
+  	              </a>
+                </li>
+              </ul>
+	          </section>
+        	  <section class="footer-friendship">
+	              <h3><b>Давайте дружить, это выгодно!</b></h3>
+	              <p>Скидка 10% для друзей из социальный сетей.</p>
+	          </section>
+          </div>
     </footer>
     <div class="popup">
       <form class="write-us-popup" action="https://echo.htmlacademy.ru" method="post">
@@ -237,10 +243,7 @@
         <input type="text" name="e-mail" id="e-mail-field" placeholder="email@example.ru">
         <label for="message-field">Текст письма:</label>
         <textarea name="message" rows="8" cols="80" id="message-field" placeholder="В свободной форме">
-
         </textarea>
-
-
         <button class="button" type="submit">Отправить</button>
       </form>
     </div>

@@ -148,8 +148,9 @@ header, .sliders {
 .filter fieldset{
   border: none;
 }
-.page-header h1 {
+.page-header-catalog h1 {
   text-align: center;
+  font-size: 55px;
 }
 .filter ul {
   list-style: none;
@@ -223,4 +224,118 @@ legend {
 .pagination-button:hover,
 .pagination-button:focus {
   background-color: #dfdfdf;
+}
+
+/* Сеточные стили */
+
+html,
+body {
+  min-width:1200px;
+  min-height: 2476px;
+}
+
+.main-navigation {
+   min-width: 1160px;
+   margin-bottom: 30px;
+   padding: 0 20px;
+   display: flex;
+}
+.main-header-logo {
+  width: 160px;
+  height: 72px;
+  padding-left: 10px;
+}
+.site-navigation-wrapper {
+  min-width: 560px;
+}
+.user-navigation {
+  min-width: 160px;
+  margin-left: auto;
+}
+
+.sliders {
+  padding: 0 20px;
+  padding-bottom: 77px;
+}
+.slider-1 {
+  display: flex;
+}
+.slider-2 {
+  display: flex;
+}
+.slider-3 {
+  display: flex;
+}
+
+.services-list {
+  display: flex;
+  margin-bottom: 80px;
+}
+.services-list li {
+  width: 300px;
+  margin-right: 100px;
+}
+.presentations {
+  margin-right: 0;
+}
+
+.about-us {
+  display: flex;
+  margin-bottom: 54px;
+  padding: 0 20px;
+}
+.description {
+  width: 760px;
+}
+.indicators {
+  min-width: 360px;
+  margin-left: auto;
+}
+
+.partners-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  min-width: 1160px;
+  margin-bottom: 82px;
+}
+
+.social-wrapper {
+  display: flex;
+  margin-top: 69px;
+}
+.footer-social {
+  width: 360px;
+}
+.footer-friendship {
+  width: 784px;
+}
+/*сетки для каталога */
+
+h1 {
+  margin-bottom: 160px;
+}
+.page-header-catalog {
+  min-height: 355px;
+}
+.filter {
+  width: 360px;
+}
+.catalog-column {
+  display: flex;
+
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+.catalog-containers {
+  width: 360px;
+  height: 616px;
+  margin-bottom: 33px;
+  margin-right: 40px;
+}
+.catalog-containers:nth-child(2n) {
+  margin-right: 0;
 }

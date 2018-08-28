@@ -10,44 +10,52 @@
   <body>
 	  <header class="page-header">
 	    <nav class="main-navigation">
-		  <a class="main-header-logo">
-		  <img src="img/nerds-logo.svg" alt="Логотип студии nerds">
-		  </a>
-		  <ul class="site-navigation">
-		    <li><a href="#">Студия</a></li>
-		    <li><a href="#">Клиенты</a></li>
-		    <li><a href="catalog.html">Магазин</a></li>
-		    <li><a href="#">Контакты</a></li>
-		  </ul>
-		  <ul class="user-navigation">
-		    <li>
-          <a href="basket.html">
-            <img src="cart-icon.svg" alt="">
-            Корзина
-          </a>
-        </li>
-		  </ul>
+        <div class="logo-navigation">
+            <a class="main-header-logo">
+		        <img src="img/nerds-logo.svg" alt="Логотип студии nerds">
+		        </a>
+        </div>
+        <div class=site-navigation-wrapper>
+          <ul class="site-navigation">
+		        <li><a href="#">Студия</a></li>
+		        <li><a href="#">Клиенты</a></li>
+		        <li><a href="catalog.html">Магазин</a></li>
+		        <li><a href="#">Контакты</a></li>
+		      </ul>
+        </div>
+        <div class="user-navigation">
+              <a href="basket.html">
+                <img src="cart-icon.svg" alt="">
+                Корзина
+              </a>
+        </div>
 	     </nav>
   	</header>
 	  <main>
 	    <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
 	    <div class="sliders">
 		    <div class="slider-1">
-          <h2>Долго, дорого, скрупулезно.</h2>
-		      <p>Математически выверенный дизайн для вашего сайта или мобильного приложения узнать больше</p>
-          <a href="#">Узнать больше</a>
+          <div class="column-sliders">
+            <h2>Долго, дорого, скрупулезно.</h2>
+		        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения узнать больше</p>
+            <a href="#">Узнать больше</a>
+          </div>
           <img src="img/slide1.png" alt="">
         </div>
         <div class="slider-2">
-          <h2>Любим математику как никто другой.</h2>
-		      <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a href="#">Узнать больше</a>
+          <div class="column-sliders">
+            <h2>Любим математику как никто другой.</h2>
+		        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a href="#">Узнать больше</a>
+          </div>
           <img src="img/slide2.png" alt="">
         </div>
         <div class="slider-3">
-          <h2>Только ночь, только хардкор</h2>
-		      <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="#">Узнать больше</a>
+          <div class="column-sliders">
+            <h2>Только ночь, только хардкор</h2>
+		        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a href="#">Узнать больше</a>
+          </div>
           <img src="img/slide3.png" alt="">
         </div>
 	    </div>
@@ -104,7 +112,8 @@
     	</section>
 	    <section class="partners">
         <h3 class="visually-hidden">Наши партнеры</h3>
-	        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <div class="partners-wrapper">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
 		        <img src="img/logo-html.png" alt="Логотип html-academy">
 	        </a>
 	        <a href="#">
@@ -116,6 +125,7 @@
 	        <a href="https://htmlacademy.ru/intensive/htmlcss">
 		        <img src="img/logo-mishka.png" alt=" Логотип MiSHKA">
 	        </a>
+        </div>
  	    </section>
     </main>
     <footer class="page-footer">
@@ -129,30 +139,32 @@
           <h3 class="visually-hidden">Мы находимся здесь</h3>
           	<!-- Здесь будет карта -->
         </section>
-      	<section class="footer-social">
-          <h3 class="visually-hidden">Мы в соцсетях</h3>
-          <ul>
-            <li>
-              <a class="social-button" href="vk.group">
-                <img src="img/vk-icon.svg" alt="ВКонтакте">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="facebook.group">
-                <img src="img/fb-icon.svg" alt="Фейсбук">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="instagram.gtoup">
-  		          <img src="img/insta-icon.svg" alt="Инстаграмм">
-  	          </a>
-            </li>
-          </ul>
-	      </section>
-      	<section class="footer-friendship">
-	          <h3><b>Давайте дружить, это выгодно!</b></h3>
-	          <p>Скидка 10% для друзей из социальный сетей.</p>
-	      </section>
+
+          <div class="social-wrapper">
+          	<section class="footer-social">
+              <ul>
+                <li>
+                  <a class="social-button" href="vk.group">
+                    <img src="img/vk-icon.svg" alt="ВКонтакте">
+                  </a>
+                </li>
+                <li>
+                  <a class="social-button" href="facebook.group">
+                    <img src="img/fb-icon.svg" alt="Фейсбук">
+                  </a>
+                </li>
+                <li>
+                  <a class="social-button" href="instagram.gtoup">
+  		              <img src="img/insta-icon.svg" alt="Инстаграмм">
+  	              </a>
+                </li>
+              </ul>
+	          </section>
+        	  <section class="footer-friendship">
+	              <h3><b>Давайте дружить, это выгодно!</b></h3>
+	              <p>Скидка 10% для друзей из социальный сетей.</p>
+	          </section>
+          </div>
     </footer>
     <div class="popup">
       <form class="write-us-popup" action="https://echo.htmlacademy.ru" method="post">

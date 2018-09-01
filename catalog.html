@@ -37,11 +37,11 @@
     <main>
       <div class="container">
       <div class="catalog-column">
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=priceoutput.value">
-        <fieldset class="price">
-          <legend>Стоимость:</legend>
-          <div class="range-filter">
-            <div class="range-controls">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="price">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
                 <div class="scale">
                     <div class="bar" style="margin-left: 20%; width: 30%"></div>
                 </div>
@@ -54,66 +54,61 @@
               <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
             </div>
           </div>
-        </fieldset>
-
+          </fieldset>
         <fieldset class="grid">
           <legend>Сетка:</legend>
-          <ul>
-            <li>
+          <ul class="grid-list">
+            <li class="grid-item">
               <input class="filter-input" type="radio" name="grid" value="adaptive" id="adaptive-filter" checked>
               <label class="filter-label" for="adaptive-filter">Адаптивная</label>
             </li>
-            <li>
+            <li class="grid-item">
               <input class="filter-input" type="radio" name="grid" value="fixed" id="fixed-filter">
               <label class="filter-label" for="fixed-filter">Фиксированая</label>
             </li>
-            <li>
+            <li class="grid-item">
               <input class="filter-input" type="radio" name="grid" value="rubber" id="rubber-filter">
               <label class="filter-label" for="rubber-filter">Резиновая</label>
             </li>
           </ul>
         </fieldset>
-
         <fieldset class="features">
           <legend>ОСОБЕННОСТИ:</legend>
-          <ul class="features-item">
-            <li>
+          <ul class="features-list">
+            <li class="features-item">
               <input class="filter-input" type="checkbox" name="slider" id="slider-filter" checked>
               <label class="filter-label" for="slider-filter">Слайдер</label>
             </li>
-            <li>
+            <li class="features-item">
               <input class="filter-input" type="checkbox" name="advantage_block" id="advantsge-filter">
               <label class="filter-label" for="advantsge-filter">Блок преимуществ</label>
             </li>
-            <li>
+            <li class="features-item">
               <input class="filter-input" type="checkbox" name="news" id="news-filter" checked>
               <label class="filter-label" for="news-filter">Новости</label>
             </li>
-            <li>
+            <li class="features-item">
               <input class="filter-input" type="checkbox" name="gallery" id="gallery-filter">
               <label class="filter-label" for="gallery-filter">Галерея</label>
             </li>
-            <li>
+            <li class="features-item">
               <input class="filter-input" type="checkbox" name="basket" id="basket-filter">
               <label class="filter-label" for="basket-filter">Корзина</label>
             </li>
           </ul>
-
         </fieldset>
-
         <button class="submit"  type="submit">Показать</button>
-
-    </form>
+      </form>
       <div class="sorting-catalog-column">
-      <section class="sorting">
-        <h3>Сортировать:</h3>
-        <ul>
-          <li><a class="sorting-item" href="#">по цене</a></li>
-          <li><a class="sorting-item" href="#">по типу</a></li>
-          <li><a class="sorting-item" href="#">по названию</a></li>
-        </ul>
-        <div class="sorting-control"></div>
-      </section>
+        <section class="sorting">
+          <h3>Сортировать:</h3>
+          <ul>
+            <li><a class="sorting-item" href="#">по цене</a></li>
+            <li><a class="sorting-item" href="#">по типу</a></li>
+            <li><a class="sorting-item" href="#">по названию</a></li>
+          </ul>
+          <div class="sorting-control"></div>
+        </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог готовых шаблонов</h2>
         <ul class="catalog-list">
@@ -211,13 +206,21 @@
             </div>
           </li>
         </ul>
-        <div class="pagination-list">
-            <a class="pagination-button active-button" href="#">1</a>
-            <a class="pagination-button" href="#">2</a>
-            <a class="pagination-button" href="#">3</a>
-            <a class="next-button" href="#">следующая</a>
-        </div>
       </section>
+      <ul class="pagination-list">
+        <li>
+          <a class="pagination-button active-button" href="#">1</a>
+        </li>
+        <li>
+          <a class="pagination-button" href="#">2</a>
+        </li>
+        <li>
+          <a class="pagination-button" href="#">3</a>
+        </li>
+        <li>
+          <a class="next-button" href="#">следующая</a>
+        </li>
+      </ul>
     </div>
     </div>
   </div>

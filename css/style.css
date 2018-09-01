@@ -477,8 +477,16 @@ legend {
   background-color: none;
 }
 .pagination-button:hover,
-.pagination-button:focus {
+.pagination-button:focus,
+.next-button:hover,
+.next-button:focus {
   background-color: #dfdfdf;
+}
+.pagination-button:active,
+.next-button:active {
+  background-color: #d5d5d5;
+  color: #a9a9a9;
+  box-shadow: inset 0 5px #bfbfbf;
 }
 
 /* Сеточные стили */

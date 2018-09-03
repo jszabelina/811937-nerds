@@ -336,6 +336,11 @@ input[type="radio"] + label::before {
   width: 27px;
   position: absolute;
   left: 0;
+  opacity: 0.4;
+}
+input[type="checkbox"] + label:hover:before,
+input[type="radio"] + label:hover:before {
+  opacity: 1;
 }
 input[type="checkbox"] + label::before {
   background-image: url("../img/checkbox-off.svg");

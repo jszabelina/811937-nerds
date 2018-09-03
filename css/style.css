@@ -1,13 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #000000;
-  min-width:1200px;
+  min-width: 1200px;
   min-height: 2476px;
 }
 .visually-hidden {
@@ -29,6 +28,7 @@ body {
 .page-header-catalog {
   padding-top: 48px;
   background-color: #eeeeee;
+  min-height: 355px;
 }
 /*Убираем подчеркивание всех ссылок*/
 a {
@@ -40,13 +40,10 @@ a {
   line-height: 30px;
   color: #000000;
 }
-
-
 .site-navigation,
 .user-navigation {
   list-style: none;
 }
-
 .site-navigation a,
 .user-navigation a {
   color: #000000;
@@ -81,23 +78,15 @@ a {
   height: 15px;
 }
 .container-slider {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(0, 0, 0, 0);
-}
-
 .slider {
   position: relative;
   background-color: #eeeeee;
 }
-
 .slider-controls {
   position: absolute;
   left: 50%;
@@ -835,7 +824,13 @@ input[type="radio"]:disabled + label {
 .write-us-popup textarea {
   width: 760px;
 }
-.write-us-popup:hover {
+input[type="text"]:hover {
+  border: 2px solid #b4b9bb;
+}
+.write-us-popup textarea {
+  border: 2px solid #d7dcde;
+}
+.write-us-popup textarea:hover {
   border: 2px solid #b4b9bb;
 }
 .write-us-popup input:focus,
@@ -856,10 +851,6 @@ input[type="radio"]:disabled + label {
 h1 {
   margin-bottom: 160px;
 }
-.page-header-catalog {
-  min-height: 355px;
-}
-
 .filter {
   width: 360px;
   flex-shrink: 0;
@@ -972,6 +963,9 @@ h1 {
   height: 616px;
   margin-bottom: 33px;
   margin-right: 40px;
+}
+.catalog-containers:hover {
+  box-shadow: 0px 2px 10px 0 #636464;
 }
 .catalog-containers:nth-child(2n) {
   margin-right: 0;

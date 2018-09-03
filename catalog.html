@@ -226,7 +226,7 @@
             <h3 class="map-header">NЁRDS DESIGN STUDIO</h3>
             <p class="map-info">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p class="map-phone">тел. +7 (812) 275-75-75</p>
-            <a class="write-us-button button" href="mail.nerds">НАПИШИТЕ НАМ</a>
+            <button class="write-us-button button" href="#">НАПИШИТЕ НАМ</button>
           </section>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729:0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" class="iframe-map" width="1200px" height="420px"></iframe>
@@ -256,24 +256,27 @@
         </div>
       </div>
     </footer>
-    <div class="popup">
-      <form class="write-us-popup" action="https://echo.htmlacademy.ru" method="post">
-        <h2>Напишите нам</h2>
-        <div class="username-container">
-          <label for="username-field">Ваше имя:</label><br>
-          <input type="text" name="username" id="username-field" placeholder="Имя Фамилия">
-        </div>
-        <div class="e-mail-container">
-          <label for="e-mail-field">Ваш e-mail:</label><br>
-          <input type="text" name="e-mail" id="e-mail-field" placeholder="email@example.ru">
-        </div>
-        <div class="message-container">
-          <label for="message-field">Текст письма:</label>
-          <textarea name="message" rows="8" cols="80" id="message-field" placeholder="В свободной форме">
-          </textarea>
-        </div>
-        <button class="button" type="submit">Отправить</button>
-      </form>
+    <div class="container">
+      <section class="modal modal-write-us">
+        <form class="write-us-popup" action="https://echo.htmlacademy.ru" method="post">
+          <h2>Напишите нам</h2>
+          <div class="username-container">
+            <label for="username-field">Ваше имя:</label><br>
+            <input type="text" name="username" id="username-field" placeholder="Имя Фамилия">
+          </div>
+          <div class="e-mail-container">
+            <label for="e-mail-field">Ваш e-mail:</label><br>
+            <input type="text" name="e-mail" id="e-mail-field" placeholder="email@example.ru">
+          </div>
+          <div class="message-container">
+            <label for="message-field">Текст письма:</label><br>
+            <textarea name="message" rows="8" cols="80" id="message-field" placeholder="В свободной форме">
+            </textarea>
+          </div>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
     </div>
   </body>
 </html>

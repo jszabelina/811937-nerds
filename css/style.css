@@ -308,11 +308,6 @@ a {
   font-size: 18px;
   line-height: 30px;
 }
-.write-us {
-  color: #ffffff;
-  background-color: #fb565a;
-  line-height: 18px;
-}
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -389,6 +384,10 @@ legend {
 .filter-input:hover + .filter-label,
 .filter-input:focus + .filter-label{
   color: #000000;
+}
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  opacity: 0.3;
 }
 .submit {
   width: 260px;
@@ -673,10 +672,6 @@ legend {
 .partners a:active {
   opacity: 0.1;
 }
-
-.map {
-
-}
 .iframe-map {
   border: 0;
   width: 100%;
@@ -724,6 +719,7 @@ legend {
 .map-phone {
   margin-bottom: 32px;
 }
+
 .footer-social-list {
   width: 267px;
   margin-right: 135px;
@@ -757,36 +753,82 @@ legend {
 .footer-friendship {
   width: 760px;
 }
-.popup {
-  position: absolute;
+.modal {
+  position: fixed;
+  z-index: 20;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 40px 0 #636464;
+}
+.modal-write-us {
+  bottom: 172px;
+  left: 100px;
   width: 960px;
   height: 590px;
   padding-left: 100px;
   padding-top: 69px;
   padding-right: 80px;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 40px 0 #636464;
+  padding-bottom: 84px;
 }
-.popup h2 {
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  width: 19px;
+  height: 3px;
+  background-color: #fecccd;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+.modal h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
 }
-.popup div {
+.modal div {
   display: inline-block;
 }
 .username-container {
   width: 360px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+}
+.message-container {
+  margin-bottom: 47px;
 }
 .e-mail-container {
   width: 360px;
 }
-.popup label {
+.modal label {
   font-weight: bold;
   line-height: 18px;
 }
-.write-us-popup input {
+.write-us-popup input[type="text"] {
   border: 2px solid #d7dcde;
+  width: 360px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.write-us-popup textarea {
+  width: 760px;
 }
 .write-us-popup:hover {
   border: 2px solid #b4b9bb;
@@ -795,12 +837,14 @@ legend {
 .write-us-popup textarea:focus {
   border: 2px solid #000000;
 }
-.popup .button {
-  margin-bottom: 10px;
+.modal .button {
+  margin-bottom: 84px;
 }
-
-.popup {
-  display: block;
+.write-us-popup input:invalid {
+  border: 2px solid #e74246;
+}
+.modal {
+  display: none;
 }
 /*сетки для каталога */
 

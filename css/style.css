@@ -760,7 +760,7 @@ input[type="radio"]:disabled + label {
   width: 960px;
   height: 590px;
   padding-left: 100px;
-  padding-top: 69px;
+  padding-top: 68px;
   padding-right: 80px;
   padding-bottom: 84px;
 }
@@ -792,6 +792,8 @@ input[type="radio"]:disabled + label {
   transform: rotate(-45deg);
 }
 .modal h2 {
+  margin: 0;
+  margin-bottom: 45px;
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
@@ -818,17 +820,17 @@ input[type="radio"]:disabled + label {
   border: 2px solid #d7dcde;
   width: 360px;
   height: 50px;
+  padding-left: 13px;
   box-sizing: border-box;
 }
 
 .write-us-popup textarea {
   width: 760px;
+  border: 2px solid #d7dcde;
+  padding: 12px 13px;
 }
 input[type="text"]:hover {
   border: 2px solid #b4b9bb;
-}
-.write-us-popup textarea {
-  border: 2px solid #d7dcde;
 }
 .write-us-popup textarea:hover {
   border: 2px solid #b4b9bb;
@@ -842,12 +844,54 @@ input[type="text"]:hover {
 }
 .write-us-popup input:invalid {
   border: 2px solid #e74246;
+  color: #e74246;
 }
 .modal {
   display: none;
 }
 .modal-show {
   display: block;
+  animation: zoom 0.6s;
+}
+@keyframes shake {
+  0%,
+  100% {transform: translateX(0);}
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {transform: translateX(-10px);}
+  20%,
+  40%,
+  60%,
+  80% {transform: translateX(10px);}
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0.01);
+  }
+  20% {
+    transform: scale(0.2);
+  }
+  40% {
+    transform: scale(0.4);
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  90% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 /*сетки для каталога */
 

@@ -36,7 +36,8 @@ a {
 }
 
 .main-navigation {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 30px;
   color: #000000;
 }
@@ -240,7 +241,7 @@ a {
  .description-we {
   font-size: 45px;
   line-height: 45px;
-  font-weight: 400;
+  font-weight: 550;
   padding: 0;
   padding-bottom: 33px;
   margin: 0;
@@ -413,10 +414,13 @@ input[type="radio"]:disabled + label {
   display: inline-block;
 }
 .sorting h3 {
+  margin-top: 0;
   display: inline-block;
   min-width: 160px;
   margin-right: 240px;
   color: #000000;
+  font-size: 18px;
+  line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -440,6 +444,9 @@ input[type="radio"]:disabled + label {
 .sorting a {
   color: #000000;
   text-transform: uppercase
+}
+.sorting {
+  margin-bottom: 30px;
 }
 .sorting-item {
   opacity: 0.3;
@@ -595,13 +602,14 @@ input[type="radio"]:disabled + label {
 
 .about-us {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 54px;
 }
 .about-us ul {
   list-style: none;
 }
 .description {
-  width: 750px;
+  min-width: 660px;
 }
 .description-info {
   padding-bottom: 39px;
@@ -753,10 +761,9 @@ input[type="radio"]:disabled + label {
   background-color: #ffffff;
   box-sizing: border-box;
   box-shadow: 0px 0px 40px 0 #636464;
-}
-.modal-write-us {
   bottom: 172px;
-  left: 100px;
+  left: 50%;
+  margin-left: -474px;
   width: 960px;
   height: 590px;
   padding-left: 100px;
@@ -987,6 +994,7 @@ h1 {
 
 .catalog-column {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
 }
 .sorting-catalog-column {

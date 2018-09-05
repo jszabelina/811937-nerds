@@ -575,7 +575,7 @@ input[type="radio"]:disabled + label {
 .main-header-logo {
   width: 160px;
   height: 72px;
-  padding-left: 10px;
+  padding-left: 30px;
   margin-right: 140px;
 }
 .main-header-logo:hover,
@@ -859,7 +859,7 @@ input[type="radio"]:disabled + label {
   border: 2px solid #d7dcde;
   padding: 12px 13px;
 }
-input[type="text"]:hover {
+.modal input[type="text"]:hover {
   border: 2px solid #b4b9bb;
 }
 .write-us-popup textarea:hover {
@@ -1011,6 +1011,7 @@ h1 {
 .max-price {
   text-align: right;
 }
+
 /*конец стилей ДЛЯ ФИЛЬТРА ЦЕНЫ*/
 
 
@@ -1057,11 +1058,11 @@ h1 {
   position: absolute;
   z-index: 10;
   width: 360px;
-  height: 201px;
   bottom: 0px;
   background-color: #eeeeee;
   color: #666666;
   padding-top: 30px;
+  padding-bottom: 43px;
   display: none;
 }
 .catalog-item p {

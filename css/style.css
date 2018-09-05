@@ -22,13 +22,14 @@ body {
   margin: 0 auto;
 }
 .page-header {
-  padding-top: 48px;
+  padding-top: 58px;
   background-color: #eeeeee;
 }
 .page-header-catalog {
-  padding-top: 48px;
+  padding-top: 58px;
   background-color: #eeeeee;
-  min-height: 355px;
+  min-height: 304px;
+  margin-bottom: 40px;
 }
 /*Убираем подчеркивание всех ссылок*/
 a {
@@ -71,7 +72,7 @@ a {
 .user-navigation::before {
   content: "";
   position: absolute;
-  left: -26px;
+  left: -36px;
   top: 8px;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
@@ -243,17 +244,22 @@ a {
   line-height: 45px;
   font-weight: 550;
   padding: 0;
-  padding-bottom: 33px;
+  padding-bottom: 16px;
   margin: 0;
 }
 .perform-orders {
   font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 8px;
 }
 .percent {
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
   margin-bottom: 22px;
+}
+.about-list {
+  margin-top: 10px;
 }
 .about-list-item {
   position: relative;
@@ -270,7 +276,7 @@ a {
 }
 .about-us table {
   text-align: center;
-  margin-left: 25px;
+  margin-left: 48px;
 }
 .about-us td {
   text-align: left;
@@ -296,6 +302,7 @@ a {
 }
 .footer-friendship p {
   line-height: 22px;
+  margin: 0;
 }
 .name {
   font-size: 18px;
@@ -359,9 +366,21 @@ fieldset {
   margin: 0;
   padding: 0;
 }
+.grid legend {
+  margin-bottom: 7px;
+}
+.features legend {
+  margin-bottom: 8px;
+}
+.grid {
+  margin-bottom: 23px;
+}
+.features {
+  margin-bottom: 23px;
+}
 .grid-item,
 .features-item {
-  padding-bottom: 15px;
+  padding-bottom: 16px;
 }
 .page-header-catalog h1 {
   text-align: center;
@@ -545,13 +564,13 @@ input[type="radio"]:disabled + label {
 
 .main-navigation {
    min-width: 1160px;
-   margin-bottom: 30px;
-   padding: 0 20px;
+   margin-bottom: 0px;
+   padding: 0;
    display: flex;
    align-items: center;
 }
 .main-navigation-catalog {
-    margin-bottom: 95px;
+    margin-bottom: 82px;
 }
 .main-header-logo {
   width: 160px;
@@ -568,6 +587,7 @@ input[type="radio"]:disabled + label {
 }
 .site-navigation-wrapper {
   min-width: 560px;
+  margin-left: 61px;
 }
 .site-navigation {
   display: flex;
@@ -576,10 +596,9 @@ input[type="radio"]:disabled + label {
   text-transform: uppercase;
 }
 .site-navigation li {
-  margin-right: 35px;
+  margin-right: 45px;
 }
 .user-navigation {
-  min-width: 160px;
   margin-left: auto;
   text-transform: uppercase;
 }
@@ -588,7 +607,7 @@ input[type="radio"]:disabled + label {
 .services {
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
-  margin-bottom: 80px;
+  margin-bottom: 68px;
 }
 
 .services-list {
@@ -606,7 +625,7 @@ input[type="radio"]:disabled + label {
 .about-us {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 54px;
+  margin-bottom: 37px;
 }
 .about-us ul {
   list-style: none;
@@ -615,7 +634,7 @@ input[type="radio"]:disabled + label {
   min-width: 660px;
 }
 .description-info {
-  padding-bottom: 39px;
+  padding-bottom: 25px;
 }
 .indicators {
   min-width: 420px;
@@ -623,12 +642,13 @@ input[type="radio"]:disabled + label {
   text-align: center;
 }
 .indicators img {
-  padding-bottom: 30px;
+  margin-top: -38px;
+  padding-bottom: 14px;
 }
 .indicators-info {
   text-align: center;
   font-weight: bold;
-  padding-bottom: 39px;
+  padding-bottom: 21px;
 }
 .partners {
   margin-bottom: 80px;
@@ -731,7 +751,7 @@ input[type="radio"]:disabled + label {
 }
 .social-wrapper {
   display: flex;
-  margin-top: 69px;
+  margin-top: 52px;
   align-items: center;
 }
 .social-container {
@@ -906,7 +926,7 @@ input[type="text"]:hover {
 /*сетки для каталога */
 
 h1 {
-  margin-bottom: 160px;
+   margin-bottom: 1px;
 }
 .filter {
   width: 360px;
@@ -1002,9 +1022,11 @@ h1 {
 }
 .sorting-catalog-column {
   width: 760px;
-
   display: flex;
   flex-direction: column;
+}
+.catalog {
+  margin-bottom: 30px;
 }
 .catalog-list {
   display: flex;

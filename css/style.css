@@ -256,7 +256,13 @@ a {
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
-  margin-bottom: 22px;
+
+}
+.percent-item {
+  padding-bottom: 13px;
+}
+.percent td {
+  padding-right: 16px;
 }
 .about-list {
   margin-top: 10px;
@@ -587,7 +593,7 @@ input[type="radio"]:disabled + label {
 }
 .site-navigation-wrapper {
   min-width: 560px;
-  margin-left: 61px;
+  margin-left: 41px;
 }
 .site-navigation {
   display: flex;
@@ -607,16 +613,32 @@ input[type="radio"]:disabled + label {
 .services {
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
-  margin-bottom: 68px;
+  margin-bottom: 78px;
 }
 
 .services-list {
   display: flex;
   list-style: none;
+  padding-left: 10px;
+  margin: 0;
+}
+.services-list h3 {
+  margin: 0;
+}
+.services-list img {
+  margin-bottom: 15px;
 }
 .services-list li {
   width: 300px;
   margin-right: 100px;
+}
+.services-list p {
+  padding-right: 22px;
+}
+.veb-sites .button,
+.apps .button,
+.presentations .button {
+  margin-top: 37px;
 }
 .presentations {
   margin-right: 0;
@@ -626,6 +648,7 @@ input[type="radio"]:disabled + label {
   display: flex;
   justify-content: space-between;
   margin-bottom: 37px;
+  padding-left: 10px;
 }
 .about-us ul {
   list-style: none;
@@ -638,12 +661,13 @@ input[type="radio"]:disabled + label {
 }
 .indicators {
   min-width: 420px;
-  padding-left: 100px;
+  padding-left: 91px;
   text-align: center;
 }
 .indicators img {
   margin-top: -38px;
   padding-bottom: 14px;
+  padding-left: 40px;
 }
 .indicators-info {
   text-align: center;
@@ -660,6 +684,7 @@ input[type="radio"]:disabled + label {
   align-items: center;
   padding-top: 44px;
   padding-bottom: 42px;
+  padding-left: 6px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
@@ -753,6 +778,7 @@ input[type="radio"]:disabled + label {
   display: flex;
   margin-top: 52px;
   align-items: center;
+  padding-left: 10px;
 }
 .social-container {
   display: flex;
